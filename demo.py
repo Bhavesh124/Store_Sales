@@ -1,5 +1,5 @@
 from flask import Flask
-from Visa_Project.logger import logging
+from StoreSales.logger import logging
 
 
 app = Flask(__name__)
