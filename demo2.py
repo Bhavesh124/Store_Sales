@@ -1,5 +1,5 @@
-from Visa_Project.exception import CustomException
-from Visa_Project.logger import logging
+from StoreSales.exception import CustomException
+from StoreSales.logger import logging
 from flask import Flask
 import os,sys
 
@@ -10,8 +10,8 @@ def index():
     try:
         raise Exception("we are testing custom exception")
     except Exception as e:
-        Visa = CustomException(e,sys)
-        logging.info(Visa.error_message)
+        StoreSales = CustomException(e,sys)
+        logging.info(StoreSales.error_message)
         logging.info("we are testing logging file")
 
 if __name__ == "__main__":
